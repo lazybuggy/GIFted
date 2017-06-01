@@ -1,0 +1,14 @@
+div .gifs{
+	display: block;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+
+div .gif-header{
+	font-family: 'Cinzel', serif;
+	font-size: 30px;
+	color: white;
+	margin-left: 20px;
+}

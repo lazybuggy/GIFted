@@ -1,0 +1,74 @@
+/* Search page */
+body.weather{
+	background-image: url("/assets/coverweather.jpg");
+	background-size: cover;
+    	background-repeat: no-repeat;
+   	background-position: 0px 80px;
+}
+
+.weather h1{
+	font-size: 50px;
+	margin-left: 250px;
+    	color: white;
+    	font-family: 'Cinzel', serif;
+}
+
+div #weather-search{
+	display: inline;
+	padding-right: 20px;
+}
+
+div .weather-content{
+	margin-top: 190px;
+}
+
+div #weather-search input[type=text]{
+   	height: 40px;
+  	width: 350px;
+    	border-radius: 5px;
+    	border: 2px solid #ccc;
+   	font-size: 26px;
+   	font-family: 'Cinzel', serif;
+}
+
+.weather-content  input[type=submit]{
+	background-color: #f3d2f4;
+	border-color: #f3d2f4;
+	border-radius: 5px;
+	width: 150px;
+	height: 50px;
+	font-size: 16px;
+	font-family: 'Cinzel', serif;
+}
+
+.weather-content  input[type=submit]:hover{
+	background-color: #f0a9f2;
+	border-color: #f0a9f2;
+}
+
+/*GIF page */
+div #city-right{
+	float: right;
+	margin-top: 20px;
+	margin-right: 130px;
+}
+
+div .weather-info{
+	float: right;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+div#forecast{
+	color: white;
+	font-family: 'Cinzel', serif;
+}
+
+#forecast h1,h2{
+	display: inline;
+}
+
+div#degrees{
+	display: inline;
+	color: white;
+	font-family: 'Cinzel', serif;
+}

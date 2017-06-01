@@ -1,0 +1,9 @@
+<div class="gif-header">
+	<h1> Trending GIFs </h1>
+</div>
+
+<div class="gifs">
+	<% @trendingURLsArray.each do |gif|%> 
+	<img src="<%= gif %>"  height="400" width="400">
+	<% end %>
+</div>

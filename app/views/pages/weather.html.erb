@@ -1,0 +1,15 @@
+<body class="weather">
+<div class="weather-content">
+	<h1> Where in the world are you? </h1>
+	<div id="city-right">
+
+		<%= form_tag(gifs_weather_path,:method => "get", id: "search-form") do %>
+			<div id="weather-search">
+				<%= text_field_tag :city, params[:city], placeholder: "Enter City name" %>
+			</div>
+		<%= submit_tag "GIFcast" %>			
+		<% end %>
+
+	</div>
+</div>
+</body>

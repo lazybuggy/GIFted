@@ -1,0 +1,128 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body{
+ 	margin: auto;
+ 	background-image: repeating-linear-gradient(0deg,  #b48eed,#cecfef,#a8f1ef); 
+    	background-position: 0px 80px;
+ }
+
+.header {
+	background-color: rgba(220, 132, 255, .7);
+	position:fixed;
+	width:100%;
+	z-index: 2;
+	box-shadow: 0px 5px 10px #222222;
+}
+
+.header nav  ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	overflow: hidden;
+ 	color: white;
+}
+
+li{
+	display: inline-block;
+}
+.right{
+	float:right;
+	display: inline-block;
+	margin-right: 15px;
+	width:auto;
+}
+
+ .header nav a{
+	display: block;
+	padding: 20px 16px;
+	color: white;
+	text-decoration: none; 
+    	font-family: 'Cinzel', serif;
+}
+
+nav a:hover{
+	color:#cecfef;
+}
+
+.logo{
+	height:80px;
+}
+
+.search{
+	padding:0px;
+	width:auto;
+	margin:0px auto;
+}
+
+.search input[type=text] {
+	padding:15px 25px;
+	height: 20px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 2px solid #ccc;
+	font-size: 16px;
+	font-family: 'Cinzel', serif;
+	background-image: url("/assets/search-icon.png");
+	background-repeat: no-repeat;
+	background-size: 16px auto;
+	background-position: 5px 8px;
+}
+
+.search input[type=text]:focus {
+	border: 2px solid #4976d0;
+}
+
+.center-trend{
+	margin-top:5px;
+	margin-bottom:0px;
+	padding-bottom: 0px;
+	font-size: 25px;
+	border-right: 1px solid #bbf6f7;
+	line-height: 20px;
+}
+
+.content-container{
+	margin:0px;
+	overflow:hidden;
+}
+
+.content{
+	margin-top:100px;
+	background-color: transparent;
+}
+
+button#big{
+	background-color: #7dede2;
+	border-color: #7dede2;
+	 width: 200px;
+  	height: 90px;
+	border-radius: 5px;
+	font-family: 'Cinzel', serif;
+}
+
+.search input[type=submit] {
+	background-color: #bbf6f7;
+	border-color: #bbf6f7;
+	height: 40px;
+	border-radius: 5px;
+	font-family: 'Cinzel', serif;
+}
+
+.search input[type=submit]:hover{
+	background-color: #8ee1e2;
+	border-color: #8ee1e2;
+}

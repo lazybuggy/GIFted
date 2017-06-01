@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GIFted</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+</head>
+<body>
+	<div class="header">
+	
+	<nav>
+		<ul>
+			<li class="logo"><a href="/home"><img src="/assets/gifted.png" height="40" width="145"></a></li>
+			
+			<div class="right">
+				<li ><a class="center-trend" href="/search-weather"> Current Weather</a></li>
+
+				<li ><a class="center-trend" href="/trending"> Trending</a></li>
+				
+				<li class="search">
+				<%= form_tag(gifs_path,:method => "get", id: "search-form") do %>
+				<%= text_field_tag :search, params[:search], placeholder: "Search GIFs" %>
+				<%= submit_tag "GIFt me!" %>
+				<% end %>
+				</li>
+				
+			</div>
+
+		</ul>	
+	</nav>
+	</div>
+	
+	<div class= "content-container">
+		<div class="content">
+			<%= yield %>
+		</div>
+	</div>
+
+</body>
+</html>

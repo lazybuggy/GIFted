@@ -1,0 +1,22 @@
+development:
+  adapter: postgresql
+  database: filmmaster
+  username: filmmaster
+  password: 1234
+  host: localhost
+  port: 5432
+
+test:
+  adapter: postgresql
+  database: filmmaster
+  username: filmmaster
+  password: 1234
+  host: localhost
+
+production:
+  adapter: postgresql
+  database: filmmaster
+  username: filmmaster
+  password: 1234
+  host: localhost
+  port: 5432
